@@ -1,28 +1,29 @@
-# Netflix-Prize-movie-recommendation
+# Netflix-Recommendation-Algorithm
 
 This project focus more on data loading, cleaning, slicing and mapping
-recommendation method using CF thorugh python
+recommendation method using Collobrative filtering by correlation matrix
 
-It consists of 4 text data files, each file contains over 20M rows, i.e. over 4K movies and 400K customers. All together over 17K movies and 500K+ customers!
+It consists of 4 text data files, each file contains over **20M rows.** 
 
-Total Compressed 1GB data.
+Over **20K movieand 500K customers.**
 
-Learn from data and recommend best TV shows to users, based on self & others behaviour 
+Total Compressed **1GB data.**
+
 
 ## Data manipulation
 
 ### Data loading
 
-Each data file (there are 4 of them) contains below columns:
+Each data file (there are 4 of them) contains information:
 
-* Movie ID (as first line of each new movie record / file)
+* Movie ID 
 * Customer ID
-* Rating (1 to 5)
-* Date they gave the ratings
+* Rating (1 - 5)
+* Rating date
 
 There is another file contains the mapping of Movie ID to the movie background like name, year of release, etc
 
-Let's import the library we needed before we get started:
+**Get started** with configuration
 ```python
 import pandas as pd
 import numpy as np
